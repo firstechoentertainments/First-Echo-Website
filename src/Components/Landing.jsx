@@ -1,4 +1,5 @@
-import heroVideo from "../assets/hero.webm";
+import heroVideo from "../assets/hero.mp4";
+import heroVideoWebm from "../assets/hero.webm";
 
 const MARQUEE_WORDS = [
   "LIGHTS",
@@ -24,14 +25,16 @@ export default function Landing() {
       {/* ---------------- HERO ---------------- */}
       <div className="relative h-screen min-h-[640px] w-full overflow-hidden">
         <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src={heroVideo} type="video/webm" />
-        </video>
+  className="absolute inset-0 h-full w-full object-cover"
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+>
+  <source src={heroVideoWebm} type="video/webm" />
+  <source src={heroVideo} type="video/mp4" />
+</video>
 
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-black/20" />
