@@ -1,6 +1,7 @@
 import BhartiyaLogo from "../assets/Clients/Bhartiya.png";
 import GalleriaLogo from "../assets/Clients/Galleria.jpg";
 import MallOfAsiaLogo from "../assets/Clients/Mall of Asia.jpg";
+import UBCityLogo from "../assets/Clients/UB City.jpg"
 
 /**
  * FIRST ECHO — Brands
@@ -16,6 +17,7 @@ const BRANDS = [
   { name: "Bhartiya", logo: BhartiyaLogo },
   { name: "Galleria", logo: GalleriaLogo },
   { name: "Mall of Asia", logo: MallOfAsiaLogo },
+  { name: "UB City" , logo:UBCityLogo}
 ];
 
 export default function Brands() {

@@ -1,31 +1,25 @@
 import { useEffect, useState } from "react";
 
-/**
- * FIRST ECHO — Gallery
- * -------------------------------------------------
- * Simple CSS-columns masonry (no absolute positioning, so
- * it does NOT need a fixed-height parent — it sizes itself
- * to whatever the tallest column ends up being).
- *
- * - Color photos (no ?grayscale param).
- * - On mobile (<640px), only the first 4 items render,
- *   with a "See more" button that expands to the full set.
- *
- * Swap the `items` array for your real event photos —
- * each needs a unique id, an img URL, and a click-through url.
- */
+import img1 from "../assets/Gallery/1.JPG";
+import img2 from "../assets/Gallery/2.png";
+import img3 from "../assets/Gallery/3.avif";
+import img4 from "../assets/Gallery/4.jpg";
+import img5 from "../assets/Gallery/5.jpg";
+import img6 from "../assets/Gallery/6.jpg";
+import img7 from "../assets/Gallery/7.jpg";
+import img8 from "../assets/Gallery/8.jpg";
+
 
 const items = [
-  { id: "1", img: "https://picsum.photos/id/1015/600/900", url: "#gallery" },
-  { id: "2", img: "https://picsum.photos/id/1011/600/750", url: "#gallery" },
-  { id: "3", img: "https://picsum.photos/id/1020/600/800", url: "#gallery" },
-  { id: "4", img: "https://picsum.photos/id/1024/600/700", url: "#gallery" },
-  { id: "5", img: "https://picsum.photos/id/1035/600/850", url: "#gallery" },
-  { id: "6", img: "https://picsum.photos/id/1039/600/650", url: "#gallery" },
-  { id: "7", img: "https://picsum.photos/id/1043/600/900", url: "#gallery" },
-  { id: "8", img: "https://picsum.photos/id/1050/600/750", url: "#gallery" },
-  { id: "9", img: "https://picsum.photos/id/1062/600/800", url: "#gallery" },
-  { id: "10", img: "https://picsum.photos/id/1074/600/700", url: "#gallery" },
+  { id: "1", img: img1, url: "#gallery" },
+  { id: "2", img: img2, url: "#gallery" },
+  { id: "3", img: img3, url: "#gallery" },
+  { id: "4", img: img4, url: "#gallery" },
+  { id: "5", img: img5, url: "#gallery" },
+  { id: "6", img: img6, url: "#gallery" },
+  { id: "7", img: img7, url: "#gallery" },
+  { id: "8", img: img8, url: "#gallery" },
+  
 ];
 
 function useIsMobile(breakpoint = "(max-width: 639px)") {

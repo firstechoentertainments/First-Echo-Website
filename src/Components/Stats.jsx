@@ -10,9 +10,9 @@ import { useEffect, useRef, useState } from "react";
 
 const STATS = [
   { value: 500, suffix: "+", label: "Events produced" },
-  { value: 10, suffix: "+", label: "Years running" },
+  { value: 5, suffix: "+", label: "Years running" },
   { value: 50, suffix: "k+", label: "Guests hosted" },
-  { value: 25, suffix: "+", label: "Cities covered" },
+  { value: 10, suffix: "+", label: "Cities covered" },
 ];
 
 export default function Stats() {
